@@ -1,3 +1,4 @@
+import path from 'path';
 import express from 'express';
 import cors from 'cors';
 import { itemsRouter } from './routes/items';
@@ -11,6 +12,8 @@ export function createApp() {
   app.get('/api/health', (_req, res) => res.json({ ok: true }));
   app.use('/api/items', itemsRouter);
   app.use('/api/selected', selectedRouter);
+
+  app.use(express.static(path.join(__dirname, '../../client/dist')));
 
   return app;
 }
