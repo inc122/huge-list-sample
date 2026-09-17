@@ -1,0 +1,1 @@
+{"root":["./src/app.tsx","./src/main.tsx","./src/types.ts","./src/api/client.ts","./src/components/leftpanel.tsx","./src/components/rightpanel.tsx","./src/hooks/usedebouncedvalue.ts","./src/hooks/useinfinitescrollsentinel.ts","./src/hooks/usepaginatedlist.ts"],"version":"5.9.3"}
